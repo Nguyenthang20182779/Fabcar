@@ -6,12 +6,10 @@ import (
 	"strconv"
 )
 
-// SmartContract provides functions for managing a car
 type SmartContract struct {
 	contractapi.Contract
 }
 
-// Car describes basic details of what makes up a car
 type Car struct {
 	Make   string `json:"make"`
 	Model  string `json:"model"`
@@ -19,7 +17,6 @@ type Car struct {
 	Owner  string `json:"owner"`
 }
 
-// QueryResult structure used for handling result of query
 type QueryResult struct {
 	Key    string `json:"Key"`
 	Record *Car
